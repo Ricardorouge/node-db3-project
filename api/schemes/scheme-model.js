@@ -22,7 +22,7 @@ function find() { // EXERCISE A
  .groupBy('sc.scheme_id')
  .orderBy('sc.scheme_id')
  .select('sc.*')
- .count('st.steps_id as number_of_steps')
+ .count('st.step_id as number_of_steps')
 }
 
 async function findById(scheme_id) { // EXERCISE B
